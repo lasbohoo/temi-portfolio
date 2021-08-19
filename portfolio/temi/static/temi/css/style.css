@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+  background: #ececec;
+}
+
+body {
+  animation: softload 1s;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  background: #eaeaea;
+  color: #333;
+}
+
+@keyframes softload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.preloader {
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.preloader img {
+  width: 100px;
+}
+a,
+a:hover {
+  color: rgb(51, 102, 204);
+  text-decoration: none;
+}
+
+.highlighted-text {
+  color: rgb(51, 102, 204);
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(83, 90, 185, 0.9), rgba(83, 90, 185, 0.9)),
+    url("/static/temi/img/anu.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+@font-face {
+  font-family: Santeria;
+  src: url("txt/Santeria.ttf");
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-family: Santeria;
+}
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.divisor {
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 -3px 8px rgba(255, 255, 255, 1);
+}
+
+.title {
+  color: rgb(51, 102, 204);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#about {
+  margin-top: 60px;
+  opacity: 0;
+  transition: 0.6s linear;
+}
+
+.skill-set-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+  width: auto;
+}
+
+.neuromorphic-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1),
+    -6px -6px 12px rgba(255, 255, 255, 1);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neuromorphic-icon img,
+.neuromorphic-icon i {
+  color: rgb(51, 102, 204);
+  font-size: 22px;
+}
+
+.neuromorphic-icon img {
+  width: 22px;
+}
+
+/*Portfolio*/
+x #portfolio {
+  position: relative;
+  left: -10vw;
+  opacity: 0;
+  transition: 0.6s linear;
+}
+
+.card {
+  border: none;
+  background-color: inherit;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px #888888;
+  transition: 0.2s ease-in-out;
+}
+
+.card img:hover {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.card h5 {
+  color: rgb(51, 102, 204);
+}
+
+#contact {
+  transition: 0.4s linear;
+  text-align: center;
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-links {
+  max-width: 300px;
+}
+
+footer {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  background: rgb(51, 102, 204);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+}
+
+.email-link {
+  color: rgb(51, 102, 204);
+  font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro .role {
+    font-size: 1.2rem;
+  }
+  .card img {
+    height: 160px;
+  }
+  .contact-links {
+    max-width: 100%;
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 8px 40px;
+  }
+
+  .nav-link {
+    margin-left: 30px;
+  }
+  .neuromorphic-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .neuromorphic-icon i {
+    font-size: 28px;
+  }
+  .neuromorphic-icon img {
+    width: 28px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+}

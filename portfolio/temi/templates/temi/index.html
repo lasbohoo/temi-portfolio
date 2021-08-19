@@ -1,0 +1,151 @@
+{% extends 'temi/base.html' %}
+{% load static %}
+{% block main %}
+
+    
+    <div class="container">
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="title">About me</h3>
+            <p>
+              An ambitious problem solver with a passion for online businesses, and who would like to join a team of likeminded developers. Temitope has some experience of creating logical and innovative solutions to complex
+              problems. I’m thorough and precise in everything he does, and has a keen interest in technology and user
+              experience. As someone who takes responsibility for his own personal development, I’m continually
+              evaluating and upgrading my skills so that i stays at the cutting edge of web development. I’m a natural
+              problem solver.
+              Right now Temitope is looking for a suitable position with a company where outstanding performance is
+              recognized and where she can work on a variety of high profile projects.
+              .
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="title">Skill set</h3>
+            <div class="row">
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <p>HTML5</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-css3"></i>
+                </div>
+                <p>CSS3</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <p>JS</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <p>Bootstrap</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fa fa-github"></i>
+                </div>
+                <p>Github</p>
+              </div>
+              <!-- <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-jquery"></i>
+                </div>
+                <p>jQuery</p> -->
+              <!-- </div> -->
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <p>React</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fab fa-node"></i>
+                </div>
+                <p>NodeJS</p>
+              </div>
+              <div class="skill col-2">
+                <div class="neuromorphic-icon">
+                  <i class="fas fa-pen"></i>
+                </div>
+                <p>UI/UX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divisor"></div>
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <h3 class="title">Projects</h3>
+        <p>
+          I enjoy coding sites and concepts from scratch and bringing ideas to
+          life. I still have a lot to learn, but here are some of the projects
+          I've built using the skills I have so far:
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card py-3">
+              <img src="{% static 'temi/img/port.png' %}" loading="lazy" />
+              <h5 class="pt-1">My Portfolio</h5>
+              <p>As currently seen.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card py-3">
+              <img src="{% static 'temi/img/padova.gif' %}" loading="lazy" />
+              <h5 class="pt-1">Hotel website</h5>
+              <p>
+                An hotel website built with django framework which simple shows the rooms available , check-ins and check-outs.
+              </p>
+              <a href="https://depadova.com.ng"
+                >View site
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card py-3">
+              <img src="{% static 'temi/img/vivo.png' %}" loading="lazy" />
+              <h5 class="pt-1">A Job Portal website</h5>
+              <a href="#"
+                >View Page</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card py-3">
+              <img src="{% static 'temi/img/loginPage.png' %}" loading="lazy" />
+              <h5 class="pt-1">Login / Sign Up Page</h5>
+              <p>
+                A minimalist login page, with a simple transition to sign in.
+              </p>
+              <a href="{% url 'login' %}">View Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divisor"></div>
+      <section id="contact">
+        <h3 class="title">Contact</h3>
+        <p>Click the link below to email me:</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="neuromorphic-icon mx-2">
+            <i class="far fa-envelope"></i>
+          </div>
+          <a class="email-link" href="mailto: simidawalang@gmail.com"
+            >Temitopefaluta@gmail.com</a
+          >
+        </div>
+      </section>
+    </div>
+  
+  </body>
+</html>
+{% endblock %}

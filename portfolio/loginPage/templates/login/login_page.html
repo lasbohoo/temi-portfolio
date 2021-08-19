@@ -1,0 +1,96 @@
+{% extends 'login/base.html' %}
+{%load static}
+{% block m %}
+
+    <div class="login-card">
+        <div class="login default-login">
+            <form>
+                <label for="email"> Email: </label>
+                <br />
+                <input type="text" id="email" name="email" />
+                <br />
+                <label for="password"> Password: </label>
+                <br />
+                <input type="password" id="email" name="email" />
+                <br />
+                <div class="password">
+                <div class="keep-signed-in">
+                    <input type="checkbox"id="keep-signed-in" name="keep-signed-in"/>
+                    <label class="mb-0" for="keep-signed-in"> Keep me signed in</label>
+                </div>
+                <a href="#">Forgot password?</a>
+                </div>
+                <button>
+                    Log in
+                </button>
+
+                <p class="text-center py-2">or</p>
+
+                <div class="d-flex">
+                    <p> Log in with: 
+                    <div class="icons">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                        <i class="fab fa-apple" aria-hidden="true"></i>
+                    </div>
+                    </p>
+                </div>
+                
+
+                <p class="bottom-text"id="signup" onclick="rotateToSignUp()"> New user? Sign Up </p>
+            </form>
+        </div>
+        <div class="sign-up default-signup">
+            <form class="vanish">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="fName"> First Name: </label>
+                        <br />
+                        <input type="text" id="fName" name="fName" />
+                    </div>
+                    <div class="col-6">
+                        <label for="lName"> Last Name: </label>
+                        <br />
+                        <input type="text" id="lName" name="lName" />
+                    </div>
+                </div>
+                <label for="email"> Email: </label>
+                <br />
+                <input type="text" id="email" name="email" />
+                <br />
+                <label for="email"> Password: </label>
+                <input type="text" id="email" name="email" />
+                <label for="confirm-password"> Confirm Password: </label>
+                <input type="password" id="confirm-password" name="confirm-password" />
+                <br />
+                <div class="password">
+                    <div class="keep-signed-in">
+                        <input type="checkbox" id="keep-signed-in" name="keep-signed-in" />
+                        <label class="mb-0" for="keep-signed-in"> Keep me signed in</label>
+                    </div>
+                    <a href="#">Need help?</a>
+                </div>
+
+                <button>
+                    Sign up
+                </button>
+
+                <p class="text-center py-2">or</p>
+
+                <div class="d-flex">
+                    <p>
+                        Sign up with:
+                        <div class="icons">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <i class="fab fa-google" aria-hidden="true"></i>
+                            <i class="fab fa-apple" aria-hidden="true"></i>
+                        </div>
+                    </p>
+                </div>
+
+
+                <p class="bottom-text" id="login" onclick="rotateToLogin()"> Already have an account? Log In </p>
+            </form>
+        </div>
+    </div>
+{% endblock %}
